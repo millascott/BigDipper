@@ -1,0 +1,27 @@
+//
+//  HomeSideTVC.swift
+//  ProjectDemoSwift
+//
+//  Created by pingguo on 2018/12/28.
+//  Copyright © 2018年 yons. All rights reserved.
+//
+
+import UIKit
+
+class HomeSideTVC: UITableViewCell {
+    
+    @IBOutlet weak var iconView: UIImageView!
+    @IBOutlet weak var titleLab: UILabel!
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Initialization code
+    }
+
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+
+        // Configure the view for the selected state
+    }
+    
+}

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DescriptionAlertView" customModule="ProjectDemoSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="343" height="286"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h5c-Rx-hB4">
+                    <rect key="frame" x="0.0" y="27.5" width="343" height="258.5"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jl1-mZ-o3f">
+                            <rect key="frame" x="24" y="191.5" width="295" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="n7W-zZ-4BN"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <state key="normal" title="我知道了">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <real key="value" value="22.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="SureBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="P0a-Q9-0D3"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这里的网络是一个虚拟网络，用来存储智能设备如何您在不同地方都有设备，希望您的家人和朋友也可以同时使用，您可以创建多网络来管理这" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ui4-9d-udN">
+                            <rect key="frame" x="30" y="100" width="283" height="66.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.63137254901960782" green="0.63137254901960782" blue="0.63137254901960782" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="什么是网络？如何创建网络？" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cj6-Lw-JEY">
+                            <rect key="frame" x="60" y="60" width="223" height="19.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Ui4-9d-udN" firstAttribute="leading" secondItem="h5c-Rx-hB4" secondAttribute="leading" constant="30" id="99i-7H-Tjb"/>
+                        <constraint firstAttribute="trailing" secondItem="Cj6-Lw-JEY" secondAttribute="trailing" constant="60" id="Crp-EZ-Y0b"/>
+                        <constraint firstItem="Ui4-9d-udN" firstAttribute="top" secondItem="h5c-Rx-hB4" secondAttribute="top" constant="100" id="MmA-mN-n8t"/>
+                        <constraint firstAttribute="trailing" secondItem="Ui4-9d-udN" secondAttribute="trailing" constant="30" id="S7V-zY-lma"/>
+                        <constraint firstItem="Cj6-Lw-JEY" firstAttribute="top" secondItem="h5c-Rx-hB4" secondAttribute="top" constant="60" id="Vuq-2A-biX"/>
+                        <constraint firstItem="Ui4-9d-udN" firstAttribute="centerX" secondItem="h5c-Rx-hB4" secondAttribute="centerX" id="WOH-qy-jok"/>
+                        <constraint firstAttribute="trailing" secondItem="Jl1-mZ-o3f" secondAttribute="trailing" constant="24" id="Z5L-NF-Bg9"/>
+                        <constraint firstItem="Jl1-mZ-o3f" firstAttribute="centerX" secondItem="h5c-Rx-hB4" secondAttribute="centerX" id="bee-qJ-RuJ"/>
+                        <constraint firstItem="Cj6-Lw-JEY" firstAttribute="centerX" secondItem="h5c-Rx-hB4" secondAttribute="centerX" id="cth-I7-Ggp"/>
+                        <constraint firstItem="Jl1-mZ-o3f" firstAttribute="top" secondItem="Ui4-9d-udN" secondAttribute="bottom" constant="25" id="muM-gc-oyW"/>
+                        <constraint firstItem="Cj6-Lw-JEY" firstAttribute="leading" secondItem="h5c-Rx-hB4" secondAttribute="leading" constant="60" id="w1x-tn-WR4"/>
+                        <constraint firstItem="Jl1-mZ-o3f" firstAttribute="leading" secondItem="h5c-Rx-hB4" secondAttribute="leading" constant="24" id="xhW-jU-jrg"/>
+                        <constraint firstAttribute="bottom" secondItem="Jl1-mZ-o3f" secondAttribute="bottom" constant="22" id="y1b-sP-KbM"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qAj-Yk-lIx">
+                    <rect key="frame" x="144" y="0.0" width="55" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="55" id="Q4A-o7-yhy"/>
+                        <constraint firstAttribute="height" constant="55" id="tax-VN-j7T"/>
+                    </constraints>
+                    <state key="normal" image="network_close_icon"/>
+                    <connections>
+                        <action selector="CloseBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="TtW-Pg-1vA"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="h5c-Rx-hB4" secondAttribute="bottom" id="9bo-LU-ZUR"/>
+                <constraint firstItem="qAj-Yk-lIx" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="PKT-Bf-YwE"/>
+                <constraint firstItem="h5c-Rx-hB4" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="27.5" id="RXE-p0-lnh"/>
+                <constraint firstItem="qAj-Yk-lIx" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="dKj-YK-oSG"/>
+                <constraint firstItem="h5c-Rx-hB4" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="taH-Pr-fZM"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="h5c-Rx-hB4" secondAttribute="trailing" id="z4F-hT-oYg"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="contentLab" destination="Ui4-9d-udN" id="SHF-xZ-2Ob"/>
+                <outlet property="sureButton" destination="Jl1-mZ-o3f" id="fMi-je-hxh"/>
+                <outlet property="titleLab" destination="Cj6-Lw-JEY" id="jHj-Pl-4Cv"/>
+            </connections>
+            <point key="canvasLocation" x="21.600000000000001" y="181.70914542728636"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="network_close_icon" width="55" height="55"/>
+    </resources>
+</document>

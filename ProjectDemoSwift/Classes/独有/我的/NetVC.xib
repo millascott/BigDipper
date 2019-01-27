@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NetVC" customModule="ProjectDemoSwift" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前账号：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CSC-Ae-hSz">
+                    <rect key="frame" x="12" y="60" width="72" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.63137254899999995" green="0.63137254899999995" blue="0.63137254899999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18645813344" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tNN-UA-sTG">
+                    <rect key="frame" x="12" y="87" width="166" height="29"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Ud-ok-Gr2">
+                    <rect key="frame" x="12" y="131" width="351" height="1"/>
+                    <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="V1i-qK-OMj"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的网络：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eiV-sT-hWt">
+                    <rect key="frame" x="12" y="147" width="72" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.63137254899999995" green="0.63137254899999995" blue="0.63137254899999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Netwark_28" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pez-6G-yi7">
+                    <rect key="frame" x="12" y="174" width="99" height="20.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  上传于2018-04-20 19:20:20  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wvd-pb-9EN">
+                    <rect key="frame" x="12" y="199.5" width="160.5" height="14"/>
+                    <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="0.2003157106" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" red="0.63137254899999995" green="0.63137254899999995" blue="0.63137254899999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wZr-CB-Fgc">
+                    <rect key="frame" x="12" y="228.5" width="351" height="1"/>
+                    <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="XPe-z7-AeC"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wOC-1w-TuW">
+                    <rect key="frame" x="12" y="632" width="182" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="wwF-GS-D2o"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="  什么是网络？如何创建网络？" image="network_what_icon">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <connections>
+                        <action selector="NetBtnClick:" destination="-1" eventType="touchUpInside" id="R9z-Ri-Ak4"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ogb-3v-dXT">
+                    <rect key="frame" x="12" y="631" width="351" height="1"/>
+                    <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="bg7-Y7-HY2"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="1Ud-ok-Gr2" secondAttribute="trailing" constant="12" id="0df-XP-YIh"/>
+                <constraint firstItem="CSC-Ae-hSz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="12" id="2mw-Ac-mpy"/>
+                <constraint firstItem="wOC-1w-TuW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="12" id="ARX-sm-P3v"/>
+                <constraint firstItem="ogb-3v-dXT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="12" id="DKk-aI-lc3"/>
+                <constraint firstItem="wvd-pb-9EN" firstAttribute="top" secondItem="Pez-6G-yi7" secondAttribute="bottom" constant="5" id="DKz-xV-uxX"/>
+                <constraint firstItem="Pez-6G-yi7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="12" id="DbH-VL-YF7"/>
+                <constraint firstItem="eiV-sT-hWt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="12" id="Eb1-63-32d"/>
+                <constraint firstItem="wvd-pb-9EN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="12" id="Eum-pU-jNp"/>
+                <constraint firstItem="Pez-6G-yi7" firstAttribute="top" secondItem="eiV-sT-hWt" secondAttribute="bottom" constant="10" id="HLI-s6-sfc"/>
+                <constraint firstItem="CSC-Ae-hSz" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="Ndh-fo-kfz"/>
+                <constraint firstAttribute="trailing" secondItem="wZr-CB-Fgc" secondAttribute="trailing" constant="12" id="P7D-wW-S7b"/>
+                <constraint firstItem="wOC-1w-TuW" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="StY-6L-nzC"/>
+                <constraint firstItem="1Ud-ok-Gr2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="12" id="XM5-7K-NxM"/>
+                <constraint firstItem="tNN-UA-sTG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="12" id="cDh-cb-3tc"/>
+                <constraint firstItem="1Ud-ok-Gr2" firstAttribute="top" secondItem="tNN-UA-sTG" secondAttribute="bottom" constant="15" id="ftH-Vn-i3p"/>
+                <constraint firstItem="tNN-UA-sTG" firstAttribute="top" secondItem="CSC-Ae-hSz" secondAttribute="bottom" constant="10" id="gdl-OF-THw"/>
+                <constraint firstItem="wZr-CB-Fgc" firstAttribute="top" secondItem="wvd-pb-9EN" secondAttribute="bottom" constant="15" id="ikt-e2-BhE"/>
+                <constraint firstItem="wZr-CB-Fgc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="12" id="l9f-M5-FxQ"/>
+                <constraint firstItem="eiV-sT-hWt" firstAttribute="top" secondItem="1Ud-ok-Gr2" secondAttribute="bottom" constant="15" id="q6W-tc-ewh"/>
+                <constraint firstAttribute="trailing" secondItem="ogb-3v-dXT" secondAttribute="trailing" constant="12" id="xPQ-ew-XVz"/>
+                <constraint firstItem="wOC-1w-TuW" firstAttribute="top" secondItem="ogb-3v-dXT" secondAttribute="bottom" id="yvx-ob-2Qc"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="183" y="152"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="network_what_icon" width="15" height="15"/>
+    </resources>
+</document>

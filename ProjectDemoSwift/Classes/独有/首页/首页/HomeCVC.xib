@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeCVC" id="gTV-IL-0wX" customClass="HomeCVC" customModule="ProjectDemoSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="219" height="107"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="219" height="107"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_mq_img" translatesAutoresizingMaskIntoConstraints="NO" id="zzb-Td-GR2">
+                        <rect key="frame" x="145" y="31" width="66" height="45"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="音乐魔球灯" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="23L-bj-NL1">
+                        <rect key="frame" x="20" y="35" width="67" height="16"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="多维度气氛渲染" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t6J-yf-Z6s">
+                        <rect key="frame" x="20" y="59" width="79" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.66274509803921566" green="0.66274509803921566" blue="0.66274509803921566" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="zzb-Td-GR2" secondAttribute="trailing" constant="8" id="5GX-3Z-fNN"/>
+                <constraint firstItem="23L-bj-NL1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="9Kq-JB-JeI"/>
+                <constraint firstItem="zzb-Td-GR2" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="GnQ-S5-hjA"/>
+                <constraint firstItem="23L-bj-NL1" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="35" id="ewN-v7-aHO"/>
+                <constraint firstItem="t6J-yf-Z6s" firstAttribute="top" secondItem="23L-bj-NL1" secondAttribute="bottom" constant="8" id="hVG-rt-5dH"/>
+                <constraint firstItem="t6J-yf-Z6s" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="hhK-Ln-BdO"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="219" height="107"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="4"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="contentLab" destination="t6J-yf-Z6s" id="RK0-tv-q4d"/>
+                <outlet property="iconView" destination="zzb-Td-GR2" id="M1Y-di-eog"/>
+                <outlet property="nameLab" destination="23L-bj-NL1" id="OMN-ad-Z6x"/>
+            </connections>
+            <point key="canvasLocation" x="-128.80000000000001" y="65.217391304347828"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="home_mq_img" width="66" height="45"/>
+    </resources>
+</document>

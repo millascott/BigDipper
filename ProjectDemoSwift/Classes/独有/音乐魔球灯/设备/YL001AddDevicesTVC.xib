@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="YL001AddDevicesTVC" rowHeight="101" id="KGk-i7-Jjw" customClass="YL001AddDevicesTVC" customModule="ProjectDemoSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="359" height="101"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="359" height="100.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eqt_mq_icon" translatesAutoresizingMaskIntoConstraints="NO" id="sFw-GD-ppI">
+                        <rect key="frame" x="40" y="13.5" width="74" height="74"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MQ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Grj-xR-bEt">
+                        <rect key="frame" x="134" y="30" width="25" height="18"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="raZ-F6-h52">
+                        <rect key="frame" x="249" y="37.5" width="65" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="26" id="HNP-Xy-yYY"/>
+                            <constraint firstAttribute="width" constant="65" id="ax2-ER-cXz"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" title="添加">
+                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                        </state>
+                        <state key="selected" title="已添加"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="13"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="AddBtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="uw1-sK-6VQ"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已连接" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Obb-ux-wZF">
+                        <rect key="frame" x="134" y="58" width="34" height="13.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="11"/>
+                        <color key="textColor" red="1" green="0.15686274510000001" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Grj-xR-bEt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="30" id="GBH-sd-KIn"/>
+                    <constraint firstItem="Obb-ux-wZF" firstAttribute="top" secondItem="Grj-xR-bEt" secondAttribute="bottom" constant="10" id="GUe-dq-S4n"/>
+                    <constraint firstItem="Grj-xR-bEt" firstAttribute="leading" secondItem="sFw-GD-ppI" secondAttribute="trailing" constant="20" id="OUM-4u-tIC"/>
+                    <constraint firstAttribute="trailing" secondItem="raZ-F6-h52" secondAttribute="trailing" constant="45" id="PDI-s6-HLw"/>
+                    <constraint firstItem="sFw-GD-ppI" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="RcS-lK-dwg"/>
+                    <constraint firstItem="raZ-F6-h52" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="YNj-SA-Twq"/>
+                    <constraint firstItem="Obb-ux-wZF" firstAttribute="leading" secondItem="sFw-GD-ppI" secondAttribute="trailing" constant="20" id="i69-DP-Lwh"/>
+                    <constraint firstItem="sFw-GD-ppI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="40" id="pWt-Jf-EK9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="addButton" destination="raZ-F6-h52" id="gYI-lm-nMc"/>
+            </connections>
+            <point key="canvasLocation" x="87.200000000000003" y="73.313343328335833"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="eqt_mq_icon" width="74" height="74"/>
+    </resources>
+</document>
