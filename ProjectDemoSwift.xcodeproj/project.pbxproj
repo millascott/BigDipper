@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		37708BDD1C20CC84C184A5D1 /* Pods_ProjectDemoSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1B15418C4DE3E28878D309 /* Pods_ProjectDemoSwiftUITests.framework */; };
 		38263C6961340CE5F41F8F13 /* Pods_ProjectDemoSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 459D83C5D65262A4739495D9 /* Pods_ProjectDemoSwiftTests.framework */; };
+		A20FB5D62213EB090083CF1E /* GardenDevicesControlVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20FB5D42213EB090083CF1E /* GardenDevicesControlVC.swift */; };
+		A20FB5D72213EB090083CF1E /* GardenDevicesControlVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A20FB5D52213EB090083CF1E /* GardenDevicesControlVC.xib */; };
 		D4ACE0C9ADBF8B6486B87015 /* Pods_ProjectDemoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACAAAEE0DC6D69F352E2D503 /* Pods_ProjectDemoSwift.framework */; };
 		E40817282181B4D4002D3A3C /* HttpManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40817272181B4D4002D3A3C /* HttpManager.swift */; };
 		E42B2EE121749B09004AABAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42B2EE021749B09004AABAD /* AppDelegate.swift */; };
@@ -151,6 +153,8 @@
 		344437A041DF84E2F65E26A5 /* Pods-ProjectDemoSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectDemoSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProjectDemoSwift/Pods-ProjectDemoSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		459D83C5D65262A4739495D9 /* Pods_ProjectDemoSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProjectDemoSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AB84972826BEA02075B7D3A /* Pods-ProjectDemoSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectDemoSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProjectDemoSwift/Pods-ProjectDemoSwift.release.xcconfig"; sourceTree = "<group>"; };
+		A20FB5D42213EB090083CF1E /* GardenDevicesControlVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GardenDevicesControlVC.swift; sourceTree = "<group>"; };
+		A20FB5D52213EB090083CF1E /* GardenDevicesControlVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GardenDevicesControlVC.xib; sourceTree = "<group>"; };
 		ACAAAEE0DC6D69F352E2D503 /* Pods_ProjectDemoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProjectDemoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C10D44691BF2CDF11C003C1C /* Pods-ProjectDemoSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectDemoSwiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProjectDemoSwiftTests/Pods-ProjectDemoSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E40817272181B4D4002D3A3C /* HttpManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpManager.swift; sourceTree = "<group>"; };
@@ -641,6 +645,8 @@
 				F21C363D21D6099B00A1F9B2 /* GardenDevicesVC.xib */,
 				F21C364121D60A7200A1F9B2 /* GardenDevicesTVC.swift */,
 				F21C364221D60A7200A1F9B2 /* GardenDevicesTVC.xib */,
+				A20FB5D42213EB090083CF1E /* GardenDevicesControlVC.swift */,
+				A20FB5D52213EB090083CF1E /* GardenDevicesControlVC.xib */,
 			);
 			path = "设备";
 			sourceTree = "<group>";
@@ -879,6 +885,7 @@
 				F2CD3ABF21E2F3B50037B8AF /* YL001DevicesTVC.xib in Resources */,
 				F2C32AFD21E8237200AE0B4E /* MiniBallAddDevicesTVC.xib in Resources */,
 				F2AA9D8B21D86AAE009743C0 /* DescriptionAlertView.xib in Resources */,
+				A20FB5D72213EB090083CF1E /* GardenDevicesControlVC.xib in Resources */,
 				F2158FD821D8608E003E9525 /* AboutVC.xib in Resources */,
 				F2158FD221D85D95003E9525 /* ForgetPasswordVC.xib in Resources */,
 				F2CD3ACB21E2F4180037B8AF /* YL001DevicesControlVC.xib in Resources */,
@@ -1140,6 +1147,7 @@
 				E47192A42180596D003D994F /* UIImage+Tool.swift in Sources */,
 				F2CD3ABA21E2F3950037B8AF /* YL001DevicesVC.swift in Sources */,
 				F239B9FB21E729FC005E1332 /* MiniBallManager.swift in Sources */,
+				A20FB5D62213EB090083CF1E /* GardenDevicesControlVC.swift in Sources */,
 				F279FE9D21E967AF00ABFCBF /* MiniBallDevicesControlVC.swift in Sources */,
 				F2158FD121D85D95003E9525 /* ForgetPasswordVC.swift in Sources */,
 				F21C364C21D610E600A1F9B2 /* GardenGroupTVC.swift in Sources */,
